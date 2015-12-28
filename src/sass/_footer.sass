@@ -1,0 +1,113 @@
+//footer
+
+.footer
+	padding-bottom: 60px 
+.footer__nav
+	margin-bottom: 20px 
+	.nav
+		font-size: 0 
+		text-align: center
+		&__item
+			position: relative
+			display: inline-block
+			vertical-align: top
+			margin-right: 30px 
+			&:after
+				content: ""
+				position: absolute
+				top: 3px
+				right: -17px
+				width: 5px 
+				height: 5px
+				border-radius: 50% 
+				background: #4d4d4d
+			&:last-child:after
+				content: none 
+		&__link
+			font-size: 13px 
+			line-height: 13px
+			color: #4d4d4d
+			text-transform: uppercase 
+			text-decoration: none 
+			letter-spacing: 2px
+
+.footer__content
+	margin-bottom: 15px 
+	padding: 42px 0
+	background: #fee7ea
+	text-align: center
+.footer__part
+	display: inline-block
+	vertical-align: top 
+	&.left
+		float: left 
+		width: 480px
+		padding: 5px 0
+	&.right
+		float: right 
+		width: 480px
+		padding: 20px 0
+	&.center
+		width: 480px
+		padding: 45px 0
+		border-left: 1px solid #979797
+		border-right: 1px solid #979797
+	&-text	
+		margin-bottom: 10px 
+		font-size: 13px
+		line-height: 20px
+		letter-spacing: 3px 
+	&-email
+		font-size: 20px 
+		line-height: 20px
+		color: #fe7d91
+		text-transform: uppercase 
+		text-decoration: none 
+		letter-spacing: 4px 
+.footer__in-la
+	display: inline-block
+	vertical-align: top
+	margin-top: 15px 
+	margin-right: 70px 
+	&:hover
+		opacity: 0.7
+	.icon-love
+		width: 58px
+		height: 93px  
+		background: url("/img/in-love.svg") no-repeat
+.footer__socials
+	display: inline-block
+	vertical-align: top
+	text-align: left
+.footer__social
+	position: relative
+	margin-bottom: 20px 
+	padding-left: 40px 
+	display: block 
+	line-height: 25px 
+	color: #4d4d4d	
+	text-transform: uppercase 
+	text-decoration: none  
+	letter-spacing: 3px 
+	&:hover
+		opacity: 0.7
+.icon-footer-in, .icon-footer-tw, .icon-footer-fb
+	position: absolute
+	top: 0
+	left: 5px  
+.icon-footer-in
+	+s(footer-in)
+.icon-footer-tw
+	+s(footer-tw)
+.icon-footer-fb
+	+s(footer-fb)
+
+.footer__copyright
+	text-align: center
+	p
+		display: inline-block
+		margin-right: 10px 
+		text-transform: uppercase
+		letter-spacing: 1px
+		&:last-child
+			margin-right: 0 

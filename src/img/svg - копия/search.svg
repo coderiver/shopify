@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.4.4 (17258) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="1" sketch:type="MSArtboardGroup" transform="translate(-60.000000, -65.000000)" fill="#AAAEB4">
+            <g id="nav" sketch:type="MSLayerGroup" transform="translate(0.000000, 34.000000)">
+                <g id="search" transform="translate(60.000000, 30.000000)" sketch:type="MSShapeGroup">
+                    <g id="Page-1-+-Page-1" transform="translate(0.000000, 1.000000)">
+                        <path d="M11.7931643,10.7963998 L8.89228778,7.89552327 C9.51161833,7.07006294 9.88293429,6.04976763 9.88293429,4.94146715 C9.88293429,2.21707159 7.6658627,0 4.94146715,0 C2.21707159,0 0,2.21707159 0,4.94146715 C0,7.6658627 2.21707159,9.88293429 4.94146715,9.88293429 C6.04976763,9.88293429 7.07006294,9.51161833 7.89552327,8.89369963 L10.7963998,11.7945762 C10.9342903,11.9324666 11.1145361,12.0007059 11.294782,12.0007059 C11.4750279,12.0007059 11.6552738,11.9324666 11.7931643,11.7931643 C12.0689452,11.5192658 12.0689452,11.0702983 11.7931643,10.7963998 L11.7931643,10.7963998 Z M1.41184776,4.94146715 C1.41184776,2.99452909 2.99452909,1.41184776 4.94146715,1.41184776 C6.8884052,1.41184776 8.47108653,2.99452909 8.47108653,4.94146715 C8.47108653,6.8884052 6.8884052,8.47108653 4.94146715,8.47108653 C2.99452909,8.47108653 1.41184776,6.8884052 1.41184776,4.94146715 L1.41184776,4.94146715 Z" id="Page-1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

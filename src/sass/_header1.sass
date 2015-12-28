@@ -1,0 +1,155 @@
+.header__inner
+	@extend %in
+.header
+	position: relative
+	margin-bottom: 100px 
+
+// BEGIN .header_1
+.header-top	
+	border-bottom: 1px solid #d3d3d3
+	.device-support
+		height: 30px
+		margin-bottom: 30px
+		border-bottom: 1px solid #d3d3d3
+		font-size: 11px
+		line-height: 30px
+		color: #fe7d91
+		text-align: center 
+		text-transform: uppercase 
+		letter-spacing: 5px
+	.header__logo
+		margin-bottom: 7px 
+		+vertical
+	.header__search
+		position: absolute
+		top: 65px 
+		left: 60px
+		vertical-align: middle 
+		form
+			position: relative
+	.header__searchsubmit
+		position: absolute
+		top: 12px
+		left: 10px 
+		background: none
+		border: none  
+		cursor: pointer
+		.icon-search
+			font-size: 12px  
+			color: #aaaeb4
+	.header__searchinput
+		width: 300px
+		height: 36px
+		display: block
+		padding-left: 32px 
+		color: #6d6d6d
+	.header__searchinput:focus
+		width: 300px
+		height: 36px
+		background-color: white
+		border: 1px solid #4a90e2
+		border-radius: 3px
+		box-shadow: 0 0 2px rgba(73, 143, 225, 0.7)
+		
+	.header__right
+		position: absolute
+		top: 70px
+		right: 60px  
+		font-size: 0 
+	.nav-list
+		&__item
+			display: inline-block
+			vertical-align: top 
+			margin-right: 25px
+			font-size: 11px 
+		&__item:last-child
+			margin-right: 0
+	.header__login
+		// font-size: 11px
+		button
+			background: none
+			border: 0
+			// font-size: 11px
+			color: #6d6d6d
+			letter-spacing: 2px 
+			cursor: pointer
+	.header__shopping-bag
+		font-size: 13px 
+		.icon-shopping-bag
+			display: inline-block
+			vertical-align: top
+			margin-top: -2px 
+			margin-right: 10px
+			font-size: 15px 
+			
+	.currencies-list
+		margin-top: -14px 
+	.currency
+		display: block
+		padding: 14px
+		font-size: 11px
+		background-color: #F5F5F5 
+		color: #6d6d6d
+		cursor: pointer
+		&:hover
+			background-color: #d6f9f1
+		&.is-active
+			background-color: #d6f9f1
+	.header__menu
+		margin-bottom: 30px
+		+vertical
+	.header__menu-item
+		display: inline-block
+		vertical-align: baseline
+		margin-right: 85px
+	.header__menu-item:last-child
+		margin-right: 0 
+	.header__menu-link
+		font-size: 13px
+		line-height: 13px
+		text-decoration: none 
+		color: #4d4d4d
+
+	//header__adv
+.header__adv
+	.header__inner
+		width: 1440px 
+		font-size: 0 
+	&-item
+		position: relative
+		display: inline-block
+		vertical-align: top
+		margin-right: 0.75%
+		height: 460px
+		width: 20% 
+		text-align: center
+		background-repeat: no-repeat  
+	&-item_big
+		width: 58.5% 
+		margin-right: 0 
+	&-link
+		text-decoration: none
+		img
+			margin: 0 76px
+			margin-bottom: 40px 		 
+	&-title
+		margin: 0 auto
+		margin-top: 35px
+		margin-bottom: 14px  
+		font-size: 15px
+		color: #8c8c8c
+		text-transform: uppercase
+	&-text
+		margin-bottom: 35px
+		font-size: 18px 
+		line-height: 23px
+		color: #000
+		text-transform: uppercase  
+		letter-spacing: 1px 
+	&-buttons
+		position: absolute
+		bottom: 65px
+		left: 0
+		right: 0
+// END .header_1
+
