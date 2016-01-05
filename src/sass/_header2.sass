@@ -1,60 +1,227 @@
 // BEGIN .header_2
 .header_2
-	.header-top	
-		height: 90px 
+	.header__top	
+		margin-bottom: 25px 
 		padding-top: 20px 
-		font-size: 0 
+		font-size: 0
+		text-align: center 
+		+r(980) 
+			padding-top: 50px 
+		+r(767)
+			padding-top: 20px 
 		.device-support, .header__logo, .header__search, .header__right, .header__menu
 			position: relative
 			display: inline-block
 			vertical-align: baseline
 			margin-bottom: 0 
 		.device-support
-			margin-right: 100px 
+			+rm(1150)		
+			width: 27%
 			border: none
-			font-size: 13px 
+			font-size: 11px 
 			color: #5db6e7
 			letter-spacing: 1px
 			text-transform: none 
+			+r(980)
+				position: absolute
+				top: 10px
+				margin-left: -126px 
+			+r(767)
+				display: none
 		.header__logo
-			margin-left: 50px 
-			margin-right: 55px 
-		.header__search, .header__right
-			top: 0 
-			left: 0
-			right: 0
-		.header__right 
-			vertical-align: middle
+			+rm(1200)		
+				width: 17% 
+			+r(980)
+				display: block
+				margin: 0
+				margin-bottom: 60px 
+				 
+		.header__search
+			+rm(1150)			
+				width: 11%
+			form
+				position: relative
+			+r(980)
+				position: absolute
+				top: 100px
+				margin-left: -130px 
+			+r(767)
+				top: 70px 
+			+r(480)
+				display: none
+		.header__searchsubmit
+			position: absolute
+			top: 12px
+			left: 10px 
+			background: none
+			border: none  
+			cursor: pointer
+			.icon-search
+				font-size: 12px  
+				color: #aaaeb4
 		.header__searchinput
 			width: 110px
-			margin-right: 40px 
+			height: 36px
 			padding-right: 10px 
+			padding-left: 32px
 			text-transform: uppercase
 			letter-spacing: 2px 
 			color: #4d4d4d
 		.header__searchinput:focus
 			width: 110px
-		
-		.header__menu
-			margin-right: 100px 
-			text-transform: uppercase
-			letter-spacing: 2px 
-			.header__menu-item
-				margin-right: 35px	
-				&:last-child
-					margin-right: 0 
-		.header__menu:before
-			content: none
-		.nav-list__item
-			font-size: 13px
-			button
-				text-transform: uppercase 
-		.currencies-list
-			margin-top: none 
-			.currency
+			height: 36px
+			background-color: white
+			border: 1px solid #4a90e2
+			border-radius: 3px
+			box-shadow: 0 0 2px rgba(73, 143, 225, 0.7)
+		.header__right
+			+rm(1150)
+				width: 15%
+			+r(980)	
+				position: absolute
+				top: 100px
+				margin: 0
+			+r(767)
+				top: 70px 
+			+r(480)
+				margin-left: -73px 
+		.nav-list
+			&__item
+				display: inline-block
+				vertical-align: baseline 
+				margin-right: 25px
 				font-size: 13px 
+				+r(980)
+					margin-right: 20px  
+				button
+				text-transform: uppercase 
+			&__item:last-child
+				margin-right: 0
+		.header__login
+			button
+				background: none
+				border: 0
+				color: #6d6d6d
+				letter-spacing: 2px 
+				cursor: pointer
+				+r(980)
+					font-size: 10px 
+		.header__shopping-bag
+			font-size: 13px 
+			.icon-shopping-bag
+				display: inline-block
+				vertical-align: top
+				margin-top: -2px 
+				margin-right: 10px
+				font-size: 15px 
 				
+		.currencies-list
+			margin-top: 0
+			+r(480)
+				margin-top: -10px 
+		.currency
+			display: block
+			padding: 10px 14px
+			font-size: 13px
+			background-color: #F5F5F5 
+			color: #6d6d6d
+			cursor: pointer
+			+r(480)
+				padding: 10px 
+			&:hover
+				background-color: #d6f9f1
+			&.is-active
+				background-color: #d6f9f1
+		.header__menu
+			+rm(1150)
+				width: 30%
+			+r(980)
+				margin-right: 0
+				margin-bottom: 20px 
+				display: block 
+			.menu
+				&__item
+					display: inline-block
+					vertical-align: baseline
+					margin-right: 35px
+					+r(1110)
+						margin-right: 15px 
+					+r(480)
+						margin: 0  
+						padding: 0 7px
+						border-left: 1px solid #000
+						&:first-child
+							border-left: none
+					&:last-child
+						margin-right: 0 
+					&-link
+						font-size: 13px
+						line-height: 13px
+						text-decoration: none 
+						text-transform: uppercase
+						letter-spacing: 2px 
+						color: #4d4d4d	
+	//header__adv
 	.header__adv
-		&-item_big
-			width: 100%
+		.header__inner
+			margin: 0 auto 
+			font-size: 0 
+			text-align: center 
+		&-item
+			position: relative
+			width: 100% 
+			display: inline-block
+			vertical-align: top
+			text-align: center
+			-webkit-background-size: cover
+			-o-background-size: cover
+			background-size: cover
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			cursor: pointer		
+			&:before
+				content: "" 
+				display: block
+				padding-bottom: percentage(460/1400)
+			+r(980)
+				width: 490px 
+				margin-bottom: 0 
+				-webkit-background-size: contain 
+				-o-background-size: contain 
+				background-size: contain 
+			+r(480)
+				width: 300px 
+
+		&-buttons
+			position: absolute
+			bottom: 65px
+			left: 0
+			right: 0
+			+r(980)
+				bottom: 40px 
+			+r(480)
+				bottom: 20px
+				width: 61%
+				margin: 0 auto
+				
+		// &-link
+		// 	text-decoration: none
+		// 	img
+		// 		margin: 0 76px
+		// 		margin-bottom: 40px 		 
+		// &-title
+		// 	margin: 0 auto
+		// 	margin-top: 35px
+		// 	margin-bottom: 14px  
+		// 	font-size: 15px
+		// 	color: #8c8c8c
+		// 	text-transform: uppercase
+		// &-text
+		// 	margin-bottom: 35px
+		// 	font-size: 18px 
+		// 	line-height: 23px
+		// 	color: #000
+		// 	text-transform: uppercase  
+		// 	letter-spacing: 1px 
 		
+	// END .header_1

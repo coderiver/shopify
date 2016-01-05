@@ -1,23 +1,22 @@
 // BEGIN .header_3
 .header_3
-	.header-top	
-		height: 120px 
-		padding-top: 20px 
+	.header__top	
+		padding: 20px 0
 		font-size: 0
 		text-align: center
 		border-bottom: 1px solid #4d4d4d
-		
+		text-align: center
 	.header__logo
 		position: relative
 		display: inline-block
 		margin-bottom: 0 
-		margin-top: 10px 
-	.header__logo:before
-		content: none
-
+		+r(480)
+			margin-bottom: 20px 
 	.header__left
 		position: absolute
 		left: 40px 
+		+r(767)
+			display: none
 	.device-support
 		margin-bottom: 10px
 		font-size: 11px 
@@ -26,6 +25,10 @@
 		letter-spacing: 1px 
 		span
 			color: #fe7d91
+		+r(980)
+			width: 200px 
+			font-size: 10px 
+			text-align: left
 	.header__socials
 		text-align: left
 	.header__social
@@ -45,43 +48,113 @@
 			font-size: 40px 
 			text-decoration: none 
 			color: #4d4d4d
-
+		+r(980)
+			display: block
 	.header__menu
-		height: 60px
 		border-bottom: 1px solid #4d4d4d
 		text-align: center
-		line-height: 60px
-	.header__menu-item
-		display: inline-block
-		vertical-align: baseline
-		margin-right: 85px
-	.header__menu-item:last-child
-		margin-right: 0 
-	.header__menu-link
-		font-size: 17px
-		line-height: 13px
-		text-decoration: none 
-		color: #4d4d4d
-		text-transform: uppercase
-		letter-spacing: 1px
-		&.new
-			color: #fe7d91
+		.menu
+			font-size: 0
+		.menu__item
+			display: inline-block
+			vertical-align: baseline
+			margin-right: 80px
+			+r(980)
+				margin-right: 40px
+			+r(767)
+				width: 33% 
+				margin-right: 0 
+				&:hover
+					background: #F3F3F3 
+		.menu__item:last-child
+			margin-right: 0 
+		.menu__item-link
+			display: inline-block
+			padding: 15px 0 
+			font-size: 17px
+			text-decoration: none 
+			color: #4d4d4d
+			text-transform: uppercase
+			letter-spacing: 1px
+			&.new
+				color: #fe7d91
+			+r(767)
+				font-size: 13px
+			+r(480)
+				font-size: 11px
 
 	.header__right
 		position: absolute
-		top: 50px
+		top: 35px
 		right: 0  
+		font-size: 0 
+		+r(980)
+			position: absolute
+			top: 30px
+			display: inline-block
+		+r(767)
+			position: relative
+			top: 0 
+			display: block
 		.nav-list__item
-			font-size: 13px
+			display: inline-block
+			vertical-align: baseline 
+			margin-right: 25px
+			font-size: 11px 			
+		.header__login
 			button
-				text-transform: uppercase 
-		.currencies-list
-			margin-top: none 
-			.currency
-				font-size: 13px 
+				font-size: 11px 
+				text-transform: uppercase 		
+				background: none 
+		.header__shopping-bag
+			.icon-shopping-bag
+				display: inline-block
+				vertical-align: top
+				margin-top: -2px 
+				margin-right: 10px
+				font-size: 15px 
 				
+		.currencies-list
+			margin-top: 0
+			+r(480)
+				margin-top: -10px 
+		.currency
+			display: block
+			padding: 10px 14px
+			font-size: 13px
+			background-color: #F5F5F5 
+			color: #6d6d6d
+			cursor: pointer
+			+r(480)
+				padding: 10px 
+			&:hover
+				background-color: #d6f9f1
+			&.is-active
+				background-color: #d6f9f1		
+			
+	//header__adv
 	.header__adv
+		.header__inner
+			margin: 0 auto 
+			font-size: 0 
+			text-align: center 
 		&-item
 			width: 50% 
 			display: inline-block
-			margin-right: 0 
+			vertical-align: top
+			text-align: center
+			-webkit-background-size: cover
+			-o-background-size: cover
+			background-size: cover
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			cursor: pointer		
+			+r(980)
+				width: 490px
+				margin-bottom: 20px 
+			+r(480)
+				width: 300px 
+			&:before
+				content: "" 
+				display: block
+				padding-bottom: percentage(460/715) 

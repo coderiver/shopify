@@ -1,155 +1,225 @@
-.header__inner
-	@extend %in
 .header
 	position: relative
 	margin-bottom: 100px 
+	+r(980)
+		margin-bottom: 20px 
 
 // BEGIN .header_1
-.header-top	
-	border-bottom: 1px solid #d3d3d3
-	.device-support
-		height: 30px
-		margin-bottom: 30px
+.header_1
+	.header__top	
+		text-align: center
 		border-bottom: 1px solid #d3d3d3
-		font-size: 11px
-		line-height: 30px
-		color: #fe7d91
-		text-align: center 
-		text-transform: uppercase 
-		letter-spacing: 5px
-	.header__logo
-		margin-bottom: 7px 
-		+vertical
-	.header__search
-		position: absolute
-		top: 65px 
-		left: 60px
-		vertical-align: middle 
-		form
-			position: relative
-	.header__searchsubmit
-		position: absolute
-		top: 12px
-		left: 10px 
-		background: none
-		border: none  
-		cursor: pointer
-		.icon-search
-			font-size: 12px  
-			color: #aaaeb4
-	.header__searchinput
-		width: 300px
-		height: 36px
-		display: block
-		padding-left: 32px 
-		color: #6d6d6d
-	.header__searchinput:focus
-		width: 300px
-		height: 36px
-		background-color: white
-		border: 1px solid #4a90e2
-		border-radius: 3px
-		box-shadow: 0 0 2px rgba(73, 143, 225, 0.7)
-		
-	.header__right
-		position: absolute
-		top: 70px
-		right: 60px  
-		font-size: 0 
-	.nav-list
-		&__item
-			display: inline-block
-			vertical-align: top 
-			margin-right: 25px
-			font-size: 11px 
-		&__item:last-child
-			margin-right: 0
-	.header__login
-		// font-size: 11px
-		button
-			background: none
-			border: 0
-			// font-size: 11px
-			color: #6d6d6d
-			letter-spacing: 2px 
-			cursor: pointer
-	.header__shopping-bag
-		font-size: 13px 
-		.icon-shopping-bag
-			display: inline-block
-			vertical-align: top
-			margin-top: -2px 
-			margin-right: 10px
-			font-size: 15px 
+		.device-support
+			height: 30px
+			margin-bottom: 30px
+			border-bottom: 1px solid #d3d3d3
+			font-size: 11px
+			line-height: 30px
+			color: #fe7d91
+			text-align: center 
+			text-transform: uppercase 
+			letter-spacing: 5px
+			+r(767)
+				display: none
+
+		.header__logo
+			margin-bottom: 7px 
+			+vertical
+			+r(980)
+				margin-bottom: 30px 
+			+r(767)
+				margin-top: 30px
+		.header__search
+			position: absolute
+			top: 65px 
+			left: 60px
+			vertical-align: middle 
+			form
+				position: relative
+			+r(980)
+				position: relative
+				top: 0
+				left: 0
+				display: inline-block  
+			+r(480)
+				display: none
 			
-	.currencies-list
-		margin-top: -14px 
-	.currency
-		display: block
-		padding: 14px
-		font-size: 11px
-		background-color: #F5F5F5 
-		color: #6d6d6d
-		cursor: pointer
-		&:hover
-			background-color: #d6f9f1
-		&.is-active
-			background-color: #d6f9f1
-	.header__menu
-		margin-bottom: 30px
-		+vertical
-	.header__menu-item
-		display: inline-block
-		vertical-align: baseline
-		margin-right: 85px
-	.header__menu-item:last-child
-		margin-right: 0 
-	.header__menu-link
-		font-size: 13px
-		line-height: 13px
-		text-decoration: none 
-		color: #4d4d4d
+		.header__searchsubmit
+			position: absolute
+			top: 12px
+			left: 10px 
+			background: none
+			border: none  
+			cursor: pointer
+			.icon-search
+				font-size: 12px  
+				color: #aaaeb4
+		.header__searchinput
+			width: 200px
+			height: 36px
+			display: block
+			padding-left: 32px 
+			color: #6d6d6d
+		.header__searchinput:focus
+			width: 200px
+			height: 36px
+			background-color: white
+			border: 1px solid #4a90e2
+			border-radius: 3px
+			box-shadow: 0 0 2px rgba(73, 143, 225, 0.7)
+			
+		.header__right
+			position: absolute
+			top: 70px
+			right: 60px  
+			font-size: 0 
+			+r(980)
+				position: relative
+				top: -10px
+				right: 0
+				display: inline-block
+		.nav-list
+			&__item
+				display: inline-block
+				vertical-align: top 
+				margin-right: 25px
+				font-size: 11px 
+				+r(980)
+					margin-right: 20px  
+			&__item:last-child
+				margin-right: 0
+		.header__login
+			button
+				background: none
+				border: 0
+				color: #6d6d6d
+				letter-spacing: 2px 
+				cursor: pointer
+				+r(980)
+					font-size: 10px 
+		.header__shopping-bag
+			font-size: 13px 
+			.icon-shopping-bag
+				display: inline-block
+				vertical-align: top
+				margin-top: -2px 
+				margin-right: 10px
+				font-size: 15px 
+				
+		.currencies-list
+			margin-top: -14px 
+			+r(480)
+				margin-top: -10px 
+		.currency
+			display: block
+			padding: 14px
+			font-size: 11px
+			background-color: #F5F5F5 
+			color: #6d6d6d
+			cursor: pointer
+			+r(480)
+				padding: 10px 
+			&:hover
+				background-color: #d6f9f1
+			&.is-active
+				background-color: #d6f9f1
+		.header__menu
+			margin-bottom: 30px
+			+vertical
+		.menu
+			&__item
+				display: inline-block
+				vertical-align: baseline
+				margin-right: 85px
+				+r(480)
+					margin: 0  
+					padding: 0 7px
+					border-left: 1px solid #000
+					&:first-child
+						border-left: none
+				&:last-child
+					margin-right: 0 
+				&-link
+					font-size: 13px
+					line-height: 13px
+					text-decoration: none 
+					color: #4d4d4d
 
 	//header__adv
-.header__adv
-	.header__inner
-		width: 1440px 
-		font-size: 0 
-	&-item
-		position: relative
-		display: inline-block
-		vertical-align: top
-		margin-right: 0.75%
-		height: 460px
-		width: 20% 
-		text-align: center
-		background-repeat: no-repeat  
-	&-item_big
-		width: 58.5% 
-		margin-right: 0 
-	&-link
-		text-decoration: none
-		img
-			margin: 0 76px
-			margin-bottom: 40px 		 
-	&-title
-		margin: 0 auto
-		margin-top: 35px
-		margin-bottom: 14px  
-		font-size: 15px
-		color: #8c8c8c
-		text-transform: uppercase
-	&-text
-		margin-bottom: 35px
-		font-size: 18px 
-		line-height: 23px
-		color: #000
-		text-transform: uppercase  
-		letter-spacing: 1px 
-	&-buttons
-		position: absolute
-		bottom: 65px
-		left: 0
-		right: 0
-// END .header_1
+	.header__adv
+		.header__inner
+			margin: 0 auto 
+			font-size: 0 
+			text-align: center 
+		&-item
+			position: relative
+			// height: 460px
+			width: 20.75% 
+			margin-right: 0.75%
+			display: inline-block
+			vertical-align: top
+			text-align: center
+			-webkit-background-size: cover
+			-o-background-size: cover
+			background-size: cover
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			cursor: pointer		
+			// width: 240px
+			+r(980)
+				width: 240px
+				margin-bottom: 20px 
+				&:nth-child(2)
+					margin-right: 0
+			&:before
+				content: "" 
+				display: block
+				padding-bottom: percentage(460/283) 
+		&-item_big
+			width: 57% 
+			margin-right: 0 
+			&:before
+				content: "" 
+				display: block
+				padding-bottom: percentage(460/779)
+			+r(980)
+				width: 490px 
+				margin-bottom: 0 
+				-webkit-background-size: contain 
+				-o-background-size: contain 
+				background-size: contain 
+			+r(480)
+				width: 300px 
+		&-buttons
+			position: absolute
+			bottom: 65px
+			left: 0
+			right: 0
+			+r(980)
+				bottom: 40px 
+			+r(480)
+				bottom: 20px
+				width: 61%
+				margin: 0 auto
 
+		// &-link
+		// 	text-decoration: none
+		// 	img
+		// 		margin: 0 76px
+		// 		margin-bottom: 40px 		 
+		// &-title
+		// 	margin: 0 auto
+		// 	margin-top: 35px
+		// 	margin-bottom: 14px  
+		// 	font-size: 15px
+		// 	color: #8c8c8c
+		// 	text-transform: uppercase
+		// &-text
+		// 	margin-bottom: 35px
+		// 	font-size: 18px 
+		// 	line-height: 23px
+		// 	color: #000
+		// 	text-transform: uppercase  
+		// 	letter-spacing: 1px 
+
+	// END .header_1

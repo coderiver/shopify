@@ -12,6 +12,10 @@
 			display: inline-block
 			vertical-align: top
 			margin-right: 30px 
+			+r(480)
+				display: block
+				margin-right: 0 
+				margin-bottom: 20px
 			&:after
 				content: ""
 				position: absolute
@@ -21,6 +25,10 @@
 				height: 5px
 				border-radius: 50% 
 				background: #4d4d4d
+				+r(480)
+					top: 21px
+					right: 50%
+					margin-right: -2px   
 			&:last-child:after
 				content: none 
 		&__link
@@ -36,22 +44,50 @@
 	padding: 42px 0
 	background: #fee7ea
 	text-align: center
+	+r(980)
+		padding: 20px 0 
 .footer__part
+	width: 33% 
 	display: inline-block
 	vertical-align: top 
-	&.left
-		float: left 
-		width: 480px
+	+r(980)	
+		width: 60% 
+		margin: 0 auto 
+		display: block 
+	+r(480)
+		width: 90% 
+		margin: 0 auto 
+	&_left
 		padding: 5px 0
-	&.right
-		float: right 
-		width: 480px
+		+r(980)
+			padding-bottom: 25px 
+		a
+			height: 137px
+			display: block 
+			background-repeat: no-repeat
+			background-position: 50% 50% 
+			-webkit-background-size: contain
+			-o-background-size: contain
+			background-size: contain
+			 
+	&_right
 		padding: 20px 0
-	&.center
-		width: 480px
+		+r(980)
+			padding: 0
+			padding-top: 20px   
+	&_center
 		padding: 45px 0
 		border-left: 1px solid #979797
 		border-right: 1px solid #979797
+		+r(980)
+			border: none 
+			border-top: 1px solid #979797
+			border-bottom: 1px solid #979797
+		+r(480)
+			padding: 35px 0 
+			border: none 
+			border-top: 1px solid #979797
+			border-bottom: 1px solid #979797
 	&-text	
 		margin-bottom: 10px 
 		font-size: 13px
@@ -64,11 +100,17 @@
 		text-transform: uppercase 
 		text-decoration: none 
 		letter-spacing: 4px 
+		+r(1150)
+			font-size: 15px 
+		+r(480)
+			font-size: 13px
 .footer__in-la
 	display: inline-block
 	vertical-align: top
 	margin-top: 15px 
-	margin-right: 70px 
+	margin-right: 70px
+	+r(480) 
+		margin-right: 50px 
 	&:hover
 		opacity: 0.7
 	.icon-love
@@ -89,6 +131,8 @@
 	text-transform: uppercase 
 	text-decoration: none  
 	letter-spacing: 3px 
+	&:last-child
+		margin-bottom: 0 
 	&:hover
 		opacity: 0.7
 .icon-footer-in, .icon-footer-tw, .icon-footer-fb
@@ -109,5 +153,12 @@
 		margin-right: 10px 
 		text-transform: uppercase
 		letter-spacing: 1px
-		&:last-child
-			margin-right: 0 
+		+r(480)
+			display: block
+			margin-bottom: 10px 
+	a
+		text-transform: uppercase
+		letter-spacing: 1px
+		text-decoration: none 
+		&:hover
+			text-decoration: underline
